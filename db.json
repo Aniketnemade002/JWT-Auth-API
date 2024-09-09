@@ -1,126 +1,147 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Product001",
-      "cost": 10,
-      "quantity": 1000,
-      "locationId": 1,
-      "familyId": 1
-    },
+  "associate": [
     {
       "id": 2,
-      "name": "Product002",
-      "cost": 20,
-      "quantity": 2000,
-      "locationId": 1,
-      "familyId": 2
+      "name": "Akbar",
+      "email": "akbar@in.com",
+      "phone": "899089898",
+      "associategroup": "level1",
+      "address": "No 2\nRamraj street, Delhi\nIndai",
+      "type": "SUPPLIER",
+      "status": true
     },
     {
-      "id": 3,
-      "name": "Product003",
-      "cost": 30,
-      "quantity": 3000,
-      "locationId": 3,
-      "familyId": 2
+      "id": 5,
+      "name": "Ramesh Kumar",
+      "email": "ramesh@inc.com",
+      "phone": "899089898",
+      "associategroup": "level2",
+      "address": "No 2\nRamraj street, chennai test\nIndai",
+      "type": "SUPPLIER",
+      "status": true
     },
     {
-      "id": 4,
-      "name": "Product004",
-      "cost": 40,
-      "quantity": 4000,
-      "locationId": 2,
-      "familyId": 3
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
+      "id": 10,
+      "name": "Natrajan",
+      "email": "nat@in.com",
+      "phone": "55566",
+      "associategroup": "level2",
+      "address": "hj",
+      "type": "SUPPLIER",
+      "status": true
     }
   ],
-  "locations": [
+  "user": [
     {
-      "id": 1,
-      "name": "Location001"
+      "username": "admin",
+      "password": "admin",
+      "name": "Adminuser",
+      "email": "ad@in.com",
+      "phone": "678888",
+      "gender": "male",
+      "role": "manager",
+      "status": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Location002"
+      "username": "testuser",
+      "password": "test",
+      "name": "NT User",
+      "email": "nt@in.com",
+      "phone": "678889999",
+      "gender": "female",
+      "role": "manager",
+      "status": true,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Location003"
+      "username": "ntuser",
+      "password": "test",
+      "name": "NT User 2",
+      "email": "nt1@in.com",
+      "phone": "66888999",
+      "gender": "male",
+      "role": "admin",
+      "status": true,
+      "id": 3
     }
   ],
-  "families": [
+  "role": [
     {
-      "id": 1,
-      "name": "FM001"
+      "code": "admin",
+      "name": "Admin"
     },
     {
-      "id": 2,
-      "name": "FM002"
+      "code": "manager",
+      "name": "Manager"
     },
     {
-      "id": 3,
-      "name": "FM003"
+      "code": "user",
+      "name": "User"
     }
   ],
-  "transactions": [
+  "menu": [
     {
-      "id": 1,
-      "cost": 11,
-      "quantity": 10,
-      "productId": 1
+      "code": "associate",
+      "Name": "Associate"
     },
     {
-      "id": 2,
-      "cost": 12,
-      "quantity": 100,
-      "productId": 2
+      "code": "customer",
+      "Name": "Customer"
     },
     {
-      "id": 3,
-      "cost": 15,
-      "quantity": 101,
-      "productId": 3
+      "code": "user",
+      "Name": "User"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "associate",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "haveview": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "haveview": true
+    },
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "haveview": true
+    },
+    {
+      "role": "manager",
+      "menu": "associate",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "haveview": true
+    },
+    {
+      "role": "manager",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "haveview": true
+    },
+    {
+      "role": "user",
+      "menu": "associate",
+      "haveadd": true,
+      "haveedit": false,
+      "havedelete": false,
+      "haveview": true
     }
   ]
 }
